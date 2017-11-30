@@ -16,11 +16,12 @@ extern int NX,NY,RUN,STEPS,LEN,FRAMES,JK_BIN_COUNT;
 extern double KAPPA,EPSILON;
 
 //Jack Knife blocking variables
-extern double topx[NXMAX][MAXRUN];
-extern double topy[NXMAX][MAXRUN];
-extern double bottomx[NXMAX][MAXRUN];
-extern double bottomy[NXMAX][MAXRUN];
+extern double topx[NXMAX][MAXRUN][MAXFRAMES];
+extern double topy[NXMAX][MAXRUN][MAXFRAMES];
+extern double bottomx[NXMAX][MAXRUN][MAXFRAMES];
+extern double bottomy[NXMAX][MAXRUN][MAXFRAMES];
 
 // Ribbon width 
+extern double framewidth[NXMAX][MAXRUN][MAXFRAMES];
 extern double rwidth[NXMAX][MAXRUN];
 
